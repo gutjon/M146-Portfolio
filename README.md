@@ -15,66 +15,34 @@ Präsentationsthema: GNS 3 <br>
 Datum Präsentation: 28.09.2021 <br> 
 
 # 2. Inhaltsverzeichnis <omit in toc>
-- [Inhaltsverzeichnis](#inhaltsverzeichnis)
-  - [Auftrag  3](#auftrag)
-  - [Ausgangslage  4](#ausgangslage)
-  - [Themen  5](#themen)
-  - [Übertragungsrate, Verfügbarkeit  6](#übertragungsrate-verfügbarkeit)
-  - [Wie viel bei Internen Server: 6](#-wie-viel-bei-internen-server)
-  - [WAN-Technologie  6](#wan-technologie)
-  - [xDSL:  7](#xdsl)
-  - [Fibre (FTTH)	7](#fibre-ftth)
-  - [Cable	7](#cable)
-  - [Radiolink  7](#radiolink)
-  - [Satellit	8](#satellit)
-  - [Vergleich	9](#vergleich)
-  - [Internet Services  11](#internet-services)
-  - [3.1 Eigener Server (Inhouse):	11](#31-eigener-server-inhouse11)
-  - [3.2 Dedizierte Server (Root-Server):	13](#32-dedizierte-server-root-server13)
-  - [3.3 Services beim Provider (Shared Hosting):	14](#33-services-beim-provider-shared-hosting14)
-  - [3.4 Vergleich	16](#34-vergleich16)
-  - [4. Sicherheit	17](#4-sicherheit17)
-  - [4.1 ISO Reihe 27000	17](#41-iso-reihe-2700017)
-  - [4.1.1 Vertraulichkeit	18](#411-vertraulichkeit18)
-  - [4.1.2 Integrität	18](#412-integrität18)
-  - [4.1.3 Authentizität und Authentisierung	18](#413-authentizität-und-authentisierung18)
-  - [4.1.4 Zurechenbarkeit:	18](#414-zurechenbarkeit18)
-  - [4.1.5 Nicht-Abstreitbarkeit	18](#415-nicht-abstreitbarkeit18)
-  - [4.1.6 Verlässlichkeit	19](#416-verlässlichkeit19)
-  - [4.1.7 Zugriffskontrolle	19](#417-zugriffskontrolle19)
-  - [4.2 Sicherheitskonzept	20](#42-sicherheitskonzept20)
-  - [4.2.1 Technische Massnahmen	20](#421-technische-massnahmen20)
-  - [4.2.2 Nicht Technische Massnahmen	20](#422-nicht-technische-massnahmen20)
-  - [5. Wartung / Überwachung	21](#5-wartung--überwachung21)
-  - [5.1 Überwachung	21](#51-überwachung21)
-  - [5.1.1 Wireshark	21](#511-wireshark21)
-  - [5.1.2 PRTG	21](#512-prtg21)
-  - [5.1.3 LAN Guard	21](#513-lan-guard21)
-  - [5.1.4 Solar Winds Netowrk Performance	21](#514-solar-winds-netowrk-performance21)
-  - [5.1.5 Networkx	21](#515-networkx21)
-  - [5.2 Wartung	22](#52-wartung22)
-  - [5.3 Vergleich	23](#53-vergleich23)
-  - [6. Firewall	24](#6-firewall24)
-  - [6.1.Günstige Hardware-Firewalls	24](#61günstige-hardware-firewalls24)
-  - [6.1.1 Anforderungen	24](#611-anforderungen24)
-  - [6.2. PC-Lösung mit Linux	24](#62-pc-lösung-mit-linux24)
-  - [6.2.1 Anforderungen	24](#621-anforderungen24)
-  - [6.3. Firewall-Service des Providers	25](#63-firewall-service-des-providers25)
-  - [6.4. Vergleich	25](#64-vergleich25)
-  - [7. VPN	26](#7-vpn26)
-  - [1.2. VPN-Achitekturen	26](#12-vpn-achitekturen26)
-  - [1.2.1.  Site-to-Site VPN	26](#121--site-to-site-vpn26)
-  - [1.2.2.  End-to-End VPN	26](#122--end-to-end-vpn26)
-  - [1.2.3.  Site-to-End VPN (Remote Access)	27](#123--site-to-end-vpn-remote-access27)
-  - [7.1. Hardwarelösung	27](#71-hardwarelösung27)
-  - [7.2. VPN-Service des Providers	28](#72-vpn-service-des-providers28)
-  - [7.3. PC-Lösung mit Windows oder Linux	28](#73-pc-lösung-mit-windows-oder-linux28)
-  - [7.4 Vergleich	29](#74-vergleich29)
-  - [Quellenverzeichnis	30](#quellenverzeichnis30)
-  - [Glossar	32](#glossar32)
-  - [Auftrag](#auftrag-1)
-  - [Ausgangslage](#ausgangslage-1)
-  - [Themen](#themen-1)
+- [1. M146 - Portfolio](#1-m146---portfolio)
+  - [Internetanbindung für ein Unternehmen realisieren.](#internetanbindung-für-ein-unternehmen-realisieren)
+  - [17.09.2021 - 28.09.2021](#17092021---28092021)
+- [2. Inhaltsverzeichnis <omit in toc>](#2-inhaltsverzeichnis-omit-in-toc)
+  - [Auftrag](#auftrag)
+  - [Ausgangslage](#ausgangslage)
+  - [Themen](#themen)
+    - [Übertragungsrate, Verfügbarkeit](#übertragungsrate-verfügbarkeit)
+    - [Wie viel bei Internen Server:](#wie-viel-bei-internen-server)
+  - [WAN-Technologie](#wan-technologie)
+    - [xDSL](#xdsl)
+    - [Fibre (FTTH)](#fibre-ftth)
+    - [Cable](#cable)
+    - [Radiolink](#radiolink)
+    - [Satellit](#satellit)
+  - [Vergleich](#vergleich)
+  - [Internet Services](#internet-services)
+    - [Dedizierte Server (Root-Server):](#dedizierte-server-root-server)
+    - [Services beim Provider (Shared Hosting):](#services-beim-provider-shared-hosting)
+    - [Vergleich](#vergleich-1)
+  - [Sicherheit](#sicherheit)
+    - [ISO Reihe 27000](#iso-reihe-27000)
+    - [Vertraulichkeit](#vertraulichkeit)
+    - [Integrität](#integrität)
+    - [Authentizität und Authentisierung](#authentizität-und-authentisierung)
+    - [Zurechenbarkeit:](#zurechenbarkeit)
+    - [Nicht-Abstreitbarkeit](#nicht-abstreitbarkeit)
+    - [Verlässlichkeit](#verlässlichkeit)
 
 
 
@@ -220,7 +188,7 @@ Die höchste Ausfallsicherheit haben DSL, Kabel und Satellitenfunk. Das kann man
 Vorteile:
 Vorteile: Volle Kontrolle über den Server, Günstiger Speicherplatz, einmalige Kosten bei der Beschaffung der Hardware, Volle Verantwortlichkeit über die Daten/Inhalte.
 
-Nachteile:
+Nachteile: <br>
 Wartung, Stromzufuhr muss auf eigenes Risiko gewährleistet sein (z.B bei Stromausfall). Man ist selbst für die Redundanz bei Strom, Internet und Hardware verantwortlich.
 Volle Verantwortlichkeit über die Daten/Inhalte, Man muss sich selbst um das Backup-Konzept kümmern. Man muss schauen welche Hardware am Ende wirklich benötigt wird.
  
@@ -234,12 +202,12 @@ Aber kritische Daten bleiben im Haus und sind immer unter eigener Kontrolle. Fü
  
  
  
-3.2 Dedizierte Server (Root-Server):
+### Dedizierte Server (Root-Server):
  
-Vorteile:
+Vorteile:<br>
 Provider ist verantwortlich für Hardware, grosse Ausfallsicherheit (die Redundanz bei Strom, Internet und Hardware ist meistens vorhanden [je nach Angebot], Support, Höchste Flexibilität in der Zusammenstellung der Server nach Kunden Bedarf. Speicherplatz innert wenigen Minuten und in beliebiger Menge beziehen. Umfangreiche Netzwerkfunktionen (Firewalls, Load Balancer, interne Netze) nutzen. Bedarf jederzeit anpassbar, inkl. Minutengenauer Abrechnung. Eigene Programme können installiert werden. Servereinstellungen können an die eigenen Bedürfnisse bestmöglich angepasst werden
  
-Nachteile:
+Nachteile:<br>
 Bei Ausfällen ist man auf den Provider angewiesen. Die Kosten sind monatlich höher als ein Hauseigener Server. Über die Jahre hinweg bezahlt man mehr als für den eigenen Server. Der Server kann nur für einen bestimmten Zweck benötigt werden.
  
 Text:
@@ -249,12 +217,12 @@ Handelt es sich um einen Dedicated Server, wird dieser Server mit seiner komplet
 Quelle: Dedicated Server
  
 
-3.3 Services beim Provider (Shared Hosting):
-Vorteile:
+### Services beim Provider (Shared Hosting):
+Vorteile:<br>
 Freischaltung innert kurzer Zeit, man bezahlt kleine monatliche Kosten (man zahlt schlussendlich für das Abo/Dienst den man gewählt/benötigt hat), Updates werden vom Provider automatisch aufgeschaltet, Die Sicherheit der Plattform liegt in der Verantwortlichkeit des Providers. Fix fertige Lösungen werden vom Provider bereitgestellt.
 Bei solchen Angeboten (auch bekannt als: Shared Host) werden oft von mehreren Kunden verwendet, die sich somit die Leistung von einem Server teilen müssen.
  
-Nachteile:
+Nachteile:<br>
 Bei Ausfällen ist man auf den Provider angewiesen. Kein Zugriff auf Plattform, Upgrades auf dem Hosting werden durch den Provider bestimmt (in der Regel: keine Einflussnahme durch einzelne Kunden), Bandbreiten Begrenzung durch den Provider oder durch andere User. Bei bestimmten Angeboten kann Limitierter Speicherplatz zum Problem werden.
  
  
@@ -266,47 +234,52 @@ Beste Lösung für den Kunden:
 Für diese Firma ist der Dedicated Server die beste Wahl, da bei diesem der Provider sich um das meiste kümmert, wie z.B. um die Ausfallsicherheit des Servers und Redundanz. Obwohl die Kosten bei der Hardware höher liegen, dürfen die Kosten der Redundanz nicht aus Betracht gelassen werden. Trotz den erhöhten Kosten muss sich der Endkunde um fast nichts kümmern.
 Das Backup-Konzept ist kann meist 2fach vorhanden sein, einmal beim Provider und zusätzlich kann eine Kopie der Daten beim Kunden hinterlegt werden. 
  
-Vergleich
+### Vergleich
 
-
+<img src="Bild2.png" alt="Alt-Text" title="" />
  
  
-1. Sicherheit
-4.1 ISO Reihe 27000
+## Sicherheit
+### ISO Reihe 27000
 Die ISO Reihe 27000 gibt einen allgemeinen Überblick über die informations-Sicherheit der Mgmt Systeme. Hier befinden die grundlegende Prinzipien, Konzepte, Begriffe und Definitionen für ISMS (Information Security Management System).
 
-Bei der Sicherheit wird die Frage nach der Verfügbarkeit gestellt. Systeme und Rechenzentren können mit verschiedenste attacken angegriffen werden wie durch einen Denial of Service (DDOS) Attack. Die ISO 27000 beschäftigt sich genau in diesem Fachbereich. Jedoch sollte man vor Beginn des Aufbaus eines Hoch Redundantes System eine Checkliste durchführen. Anhand dieser Checkliste kann genau ermitteln, wo und welches System mit welcher Priorität eingestuft werden muss.  
+Bei der Sicherheit wird die Frage nach der Verfügbarkeit gestellt. Systeme und Rechenzentren können mit verschiedenste attacken angegriffen werden wie durch einen Denial of Service (DDOS) Attack. Die ISO 27000 beschäftigt sich genau in diesem Fachbereich. Jedoch sollte man vor Beginn des Aufbaus eines Hoch Redundantes System eine Checkliste durchführen. Anhand dieser Checkliste kann genau ermitteln, wo und welches System mit welcher Priorität eingestuft werden muss.
+
+<img src="Bild3.png" alt="Alt-Text" title="" /> <br>
 Anhand dieser Grafik kann man seine Systeme einstufen. Hier werden zum Beispiel Finanzdienstleister ganz oben links bei der Kurve eingestuft und kleine Coiffeur Betriebe ganz unten Recht in der Kurve. 
-4.1.1 Vertraulichkeit
+
+### Vertraulichkeit
 Bei der Vertraulichkeit geht es um den Schutz von sensiblen Daten im Betrieb. Dies werden meisten mit “Public”, “Internal”, “Confidential” und “Secret vermerkt” Public sind diese Daten, die jeder im Netz sehen darf, also diese die schon Zum Beispiel auf einer Website zu sehen sind. Internal sind Daten, die nur Mitarbeiter vom selben Betrieb sehen dürfen. Dies können Dokumentationen, Anleitungen oder auch Kundenaccounts. Confidential sind dann schon sehr strenge Dokumenten wie Offerten, die auf keinen Fall bei der Öffentlichkeit bekannt sein dürfen. Secret Dokumente sollen sehr Geheim und in einem sehr kleinen Radius verteilt werden. Diese sind dann Geschäftskritische Daten wie Rezepte oder Bilanzen. 
-4.1.2 Integrität
+
+### Integrität
 Bei der Integrität geht es darum, wer auf welche Daten oder System Zugriffe haben sollte. Zum Beispiel dürfen Personen aus dem Kaufmännischen Bereich kein Zugriff auf Administratoren Konten oder gar auf Jumpservers haben. So könnten diese Zugriffe missbraucht werden und dies könnte dem Betrieb viel Geld und Zeit kosten. Deswegen soll man sich immer zuerst die Fragen stellen wenn es um den Zusammenhang mit den Internetanbindungen von Firmen geht:
 
-●	Wie viele Mitarbeiter müssen darauf Zugriff haben?
-●	Arbeiten auch Externe Personen damit?
-●	Welche Zugriffe haben Externe (VPN)?
+* Wie viele Mitarbeiter müssen darauf Zugriff haben? <br>
+* Arbeiten auch Externe Personen damit? <br>
+* Welche Zugriffe haben Externe (VPN)?
 
-4.1.3 Authentizität und Authentisierung
+### Authentizität und Authentisierung
 Netzwerkfähige Geräte sollten immer mit starken Passwörtern gesichert sein. Es muss immer klar sein, wer und wieso hat Zugriffe auf solche Systeme oder Geräten. Zudem muss man sich bei der Authentisierung diese Frage überlegen:
 
-●	Welches Verfahren soll zum Einsatz kommen? 1,2 oder 3 Stufiges Konzept?
-●	Sind Biometrische Daten auch erwünscht? (BSP: Physische Datacenter Zugriff)
-4.1.4 Zurechenbarkeit:
+* Welches Verfahren soll zum Einsatz kommen? 1,2 oder 3 Stufiges Konzept?
+* Sind Biometrische Daten auch erwünscht? (BSP: Physische Datacenter Zugriff) <br>
+
+### Zurechenbarkeit:
 Dateien, Mails und Briefe sollen immer einem Owner gewährleistet sein. So können bei Fragen und unklarheiten dieser Owner angefragt werden. Dieser Owner ist auch für die Annahme oder ABlehnung von Berechtigungen auf seine Dateien zuständig. Mails sollen zudem auch immer signiert werden. 
 
-4.1.5 Nicht-Abstreitbarkeit
+### Nicht-Abstreitbarkeit
 Dieses Sicherheitsanforderung gilt an Web-Shops. Aus Sicht der Internetanbindungen soll man sich fragen, ob ein Webshop im Einsatz ist und ob Bestellungen via Mail oder via des WEB erfolgen. Dies muss man dokumentieren. 
-4.1.6 Verlässlichkeit
+### Verlässlichkeit
 Die Verlässlichkeit spielt eine grosse Rolle mit der Wartung der Internetzugänge. Daher müssen folgende Fragen gestellt werden:
 
-●	Wie ist die Wartung organisiert?
-●	Sind die Systeme zuverlässig gewartet?
-●	Werden Backups gemacht?
-●	Werden Patches regelmässig eingespielt?
-●	ISt PKI (Public key Infrastructure) im Einsatz?
-●	Werden die Vulnerabilitäts Datenbanken regelmässig konsultiert?
-●	Werden ihre Firewalls intern oder extern gemanaged?
-●	Ist der BSI Grundschutz implementiert?
+* Wie ist die Wartung organisiert?
+* Sind die Systeme zuverlässig gewartet?
+* Werden Backups gemacht?
+* Werden Patches regelmässig eingespielt?
+* Ist PKI (Public key Infrastructure) im Einsatz?
+* Werden die Vulnerabilitäts Datenbanken regelmässig konsultiert?
+* Werden ihre Firewalls intern oder extern gemanaged?
+* Ist der BSI Grundschutz implementiert?
 
 4.1.7 Zugriffskontrolle
 Bei der zugriffskontrolle geht es nicht nur um physische Berechtigung sondern auch um das surfen im Internet. Auf welche Dienste und Webseiten sollen die Mitarbeiter der Firmen zugriff haben und wie lange? Diese Regeln müssen dann überwacht und überprüft werden. 
@@ -333,7 +306,7 @@ Zudem soll man jeden Dienst und Ort und die Zugriffsart gut dokumentieren.
 ●	Genaue Dokumentation über zugriffskontrollen auf den Servern müssen laufend gemacht werden.
 
  
-5. Wartung / Überwachung
+1. Wartung / Überwachung
 5.1 Überwachung
 5.1.1 Wireshark
 Der Netzwerk-Sniffer Wireshark ist eine frei erhältliche Software, mit der sich Datenverbindungen auf Protokollebene mitlesen und auswerten lassen. So kann der Data Traffic im Netzwerk genau aufgenommen und analysiert werden. 
