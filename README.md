@@ -43,6 +43,11 @@ Datum Präsentation: 28.09.2021 <br>
     - [Zurechenbarkeit:](#zurechenbarkeit)
     - [Nicht-Abstreitbarkeit](#nicht-abstreitbarkeit)
     - [Verlässlichkeit](#verlässlichkeit)
+    - [Zugriffskontrolle](#zugriffskontrolle)
+  - [Sicherheitskonzept](#sicherheitskonzept)
+    - [Technische Massnahmen](#technische-massnahmen)
+    - [Nicht Technische Massnahmen](#nicht-technische-massnahmen)
+  - [Wartung / Überwachung](#wartung--überwachung)
 
 
 
@@ -281,32 +286,32 @@ Die Verlässlichkeit spielt eine grosse Rolle mit der Wartung der Internetzugän
 * Werden ihre Firewalls intern oder extern gemanaged?
 * Ist der BSI Grundschutz implementiert?
 
-4.1.7 Zugriffskontrolle
+### Zugriffskontrolle
 Bei der zugriffskontrolle geht es nicht nur um physische Berechtigung sondern auch um das surfen im Internet. Auf welche Dienste und Webseiten sollen die Mitarbeiter der Firmen zugriff haben und wie lange? Diese Regeln müssen dann überwacht und überprüft werden. 
 Zudem soll man jeden Dienst und Ort und die Zugriffsart gut dokumentieren. 
  
-4.2 Sicherheitskonzept
-4.2.1 Technische Massnahmen
-●	Servers müssen durch einen USV Stromzufuhr betrieben werden. 
-●	Physischer Zugriff für in den DC muss über Biometrisches Verfahren gehen.
-●	Internetleitungen müssen Redundant sein.
-●	Auf Netzwerkfähige Geräte im Serverraum wie Router und Switches, muss ein sicheres admin Passwort gesetzt werden.
-●	Router muss Redundant sein
-●	Bei den Servern müssen sichere BIOS und Admin Passwörter gesetzt werden. 
-●	Webserver sollen in einem DMZ stehen und über einen Jump Server erreichbar sein.
-●	Wenn Externe Mitarbeiter auf den Servers oder Datenbanken zugriff haben sollen, muss ein sicherer VPN eingesetzt werden
-●	Differentials Backup müssen Täglich vom System gemacht werden.
+## Sicherheitskonzept
+### Technische Massnahmen
+* Servers müssen durch einen USV Stromzufuhr betrieben werden. 
+* Physischer Zugriff für in den DC muss über Biometrisches Verfahren gehen.
+* Internetleitungen müssen Redundant sein.
+* Auf Netzwerkfähige Geräte im Serverraum wie Router und Switches, muss ein sicheres admin Passwort gesetzt werden.
+* Router muss Redundant sein
+* Bei den Servern müssen sichere BIOS und Admin Passwörter gesetzt werden. 
+* Webserver sollen in einem DMZ stehen und über einen Jump Server erreichbar sein.
+* Wenn Externe Mitarbeiter auf den Servers oder Datenbanken zugriff haben sollen, muss ein sicherer VPN eingesetzt werden
+* Differentials Backup müssen Täglich vom System gemacht werden.
  
-4.2.2 Nicht Technische Massnahmen
-●	Abgeschlossener Bereich für den Serverraum
-●	Offene Switches müssen in einem Kasten / Schrank abgeschlossen werden
-●	Vendor Escalation für wichtige Systeme / Server müssen genau dokumentiert werden
-●	Pikett Dienst muss durchgeführt und dokumentiert werden.
-●	Bei jeder Berechtigungsart muss ein Owner definiert und dokumentiert werden.
-●	Genaue Dokumentation über zugriffskontrollen auf den Servern müssen laufend gemacht werden.
+### Nicht Technische Massnahmen
+* Abgeschlossener Bereich für den Serverraum
+* Offene Switches müssen in einem Kasten / Schrank abgeschlossen werden
+* Vendor Escalation für wichtige Systeme / Server müssen genau dokumentiert werden
+* Pikett Dienst muss durchgeführt und dokumentiert werden.
+* Bei jeder Berechtigungsart muss ein Owner definiert und dokumentiert werden.
+* Genaue Dokumentation über zugriffskontrollen auf den Servern müssen laufend gemacht werden.
 
  
-1. Wartung / Überwachung
+## Wartung / Überwachung
 5.1 Überwachung
 5.1.1 Wireshark
 Der Netzwerk-Sniffer Wireshark ist eine frei erhältliche Software, mit der sich Datenverbindungen auf Protokollebene mitlesen und auswerten lassen. So kann der Data Traffic im Netzwerk genau aufgenommen und analysiert werden. 
@@ -343,7 +348,7 @@ Beim Produkt Katalog wird beschrieben, welche Applikationen oder Dienste davon b
 
 
  
-6. Firewall 
+1. Firewall 
 Eine Firewall ist essentiell und es ist nur eine Frage der Zeit bis ein ungebetener Gast sich im eigenen Netzwerk umschaut, es führt also kein Weg an einer Firewall vorbei. Es gibt drei Arten von Firewall lösungen: Hardware-Firewalls, PC Lösungen und Firewall Services vom eigenen Provider z.B. Diese werden hier anschliessend verglichen.
 6.1.Günstige Hardware-Firewalls 
 Palo Alto ist im Bereich Netzwerksicherheit eine der Marktführenden Firmen. Es gibt sehr viele unterschiedliche Firewall Lösungen welche sie anbieten, für KMUs und Enterprise. Ich empfehle die PA-3020 Firewall. Diese NGFW hat einen Durchsatz von über 2 Gbit/s, unterstützt mehrere  VLANs, und bietet eine eigene VPN Lösung.  
