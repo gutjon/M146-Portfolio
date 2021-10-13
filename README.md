@@ -48,6 +48,29 @@ Datum Präsentation: 28.09.2021 <br>
     - [Technische Massnahmen](#technische-massnahmen)
     - [Nicht Technische Massnahmen](#nicht-technische-massnahmen)
   - [Wartung / Überwachung](#wartung--überwachung)
+    - [Wireshark](#wireshark)
+    - [PRTG](#prtg)
+    - [Solar Winds Netowrk Performance](#solar-winds-netowrk-performance)
+    - [NetworkX](#networkx)
+    - [Wartung](#wartung)
+    - [Vergleich](#vergleich-2)
+  - [Firewall](#firewall)
+    - [Anforderungen](#anforderungen)
+    - [Optional](#optional)
+    - [PC-Lösung mit Linux](#pc-lösung-mit-linux)
+    - [Anforderungen](#anforderungen-1)
+    - [Firewall-Service des Providers](#firewall-service-des-providers)
+    - [Vergleich](#vergleich-3)
+  - [VPN](#vpn)
+  - [VPN-Achitekturen](#vpn-achitekturen)
+    - [Site-to-Site VPN](#site-to-site-vpn)
+    - [End-to-End VPN](#end-to-end-vpn)
+    - [Site-to-End VPN (Remote Access)](#site-to-end-vpn-remote-access)
+    - [Hardwarelösung](#hardwarelösung)
+    - [VPN-Service des Providers](#vpn-service-des-providers)
+    - [PC-Lösung mit Windows oder Linux](#pc-lösung-mit-windows-oder-linux)
+    - [Vergleich](#vergleich-4)
+- [Quellenverzeichnis](#quellenverzeichnis)
 
 
 
@@ -312,30 +335,32 @@ Zudem soll man jeden Dienst und Ort und die Zugriffsart gut dokumentieren.
 
  
 ## Wartung / Überwachung
-5.1 Überwachung
-5.1.1 Wireshark
+
+### Wireshark
 Der Netzwerk-Sniffer Wireshark ist eine frei erhältliche Software, mit der sich Datenverbindungen auf Protokollebene mitlesen und auswerten lassen. So kann der Data Traffic im Netzwerk genau aufgenommen und analysiert werden. 
 
-5.1.2 PRTG
+### PRTG
 PRTG überwacht die gesamte IT-Infrastruktur rund um die Uhr und informiert Sie über Probleme, bevor Nutzer sie überhaupt bemerken. Die Software dient dem Systemadministratoren ein effizienteres, schnelleres und besseres Arbeiten. PRTG bringt viele Features mit sich wie ein Benachrichtigungssystem, GUI, Cluster Failover Lösung, Maps und Dashboards, verteiltes Monitoring und detaillierte Berichte.
 5.1.3 LAN Guard
 Ohne Patch-Management ist Ihr Unternehmen zahlreichen Risiken ausgesetzt. Denn fehlende Updates sind die häufigste Ursache für Sicherheitslücken im Netzwerk. Mit GFI LanGuard lassen sich offene Schwachstellen schnell erkennen und rechtzeitig beheben, um Angreifern keine Chance zu geben. 
 
-5.1.4 Solar Winds Netowrk Performance
+<img src="Bild9.jpg" alt="Alt-Text" title="" /> <br>
+
+### Solar Winds Netowrk Performance
 Die meisten Netzwerksicherheit Probleme treten auf, wenn Konfigurationen geändert werden. SolarWinds NPM kann diese identifizieren und viele automatisch beheben. Neben soliden Schwachstellen-Scans und erweiterten Optionen zur Erstellung und Überwachung von Richtlinien ist dies bei weitem die erste Wahl für Netzwerküberwachungssysteme.
-5.1.5 Networkx
+### NetworkX
 NetworkX ist ein Python-Paket für die Erstellung, Manipulation und Untersuchung der Struktur, Dynamik und Funktionen komplexer Netzwerke. Aufgrund der Verwendung einer reinen Python-Datenstruktur ist NetworkX ein recht effizientes, sehr skalierbares, hochportables Framework für die Analyse von sozialen und anderen Netzwerken.
 
  
-5.2 Wartung
+### Wartung
 Der Prozess bei der Wartung läuft über ITSM und dem ITIL Prozess. ITSM ist ein internet Ticket Tool von BCM. Bei einer Wartung muss ein Change angemeldet werden und auf folgende Kriterien geachtet werden:
 
-●	Datum (Start- & Enddatum) -> Einhaltung der SLA
-●	Configuration Item
-●	Collision Detection
-●	Produkt Katalog
-●	Risk Report
-●	Notes
+* Datum (Start- & Enddatum) -> Einhaltung der SLA
+* Configuration Item
+* Collision Detection
+* Produkt Katalog
+* Risk Report
+* Notes
 
 Es muss genau angegeben werden, in welcher Zeitperiode die Wartung stattfindet. Diese soll im normalfall an einem Wochenende stattfinden, ausser es ist ein Notfall und dieser Change ist Betriebskritisch. 
 Der Configuration Item muss genau angegeben werden (Hostname und Mac Adresse).
@@ -343,71 +368,77 @@ Collision Detection wird automatisch erkennen, ob der gleiche oder andere Hosts 
 Beim Produkt Katalog wird beschrieben, welche Applikationen oder Dienste davon betroffen werden. Diese zuständige Gruppen / Abteilungen müssen diesen Change vor der Durchführung noch genehmigen. Eine definierte Risk Report wird im internen Ticket Tool ITSM ausgefüllt. Bei den Notes wird angefügt, was genau bei diesem Change gemacht werden muss. 
 
  
-5.3 Vergleich
+### Vergleich
  
-
+<img src="Bild4.png" alt="Alt-Text" title="" /> <br>
 
  
-1. Firewall 
+## Firewall 
 Eine Firewall ist essentiell und es ist nur eine Frage der Zeit bis ein ungebetener Gast sich im eigenen Netzwerk umschaut, es führt also kein Weg an einer Firewall vorbei. Es gibt drei Arten von Firewall lösungen: Hardware-Firewalls, PC Lösungen und Firewall Services vom eigenen Provider z.B. Diese werden hier anschliessend verglichen.
 6.1.Günstige Hardware-Firewalls 
 Palo Alto ist im Bereich Netzwerksicherheit eine der Marktführenden Firmen. Es gibt sehr viele unterschiedliche Firewall Lösungen welche sie anbieten, für KMUs und Enterprise. Ich empfehle die PA-3020 Firewall. Diese NGFW hat einen Durchsatz von über 2 Gbit/s, unterstützt mehrere  VLANs, und bietet eine eigene VPN Lösung.  
-6.1.1 Anforderungen
--	Glasfaser Kabel
+### Anforderungen
+* Glasfaser Kabel
 
-Optional
--	Serverrack
+### Optional
+* Serverrack
 
 
-6.2. PC-Lösung mit Linux
+### PC-Lösung mit Linux
 OPNsense ist eine Open Source Firewall Lösung welche für FreeBSD entwickelt wurde und somit auch auf Linux läuft. Es werden Multi WAN, VPN, 2FA und viele weitere nützliche Features unterstützt. Der grosse Vorteil an OPNsense ist, dass es Open Source ist und es sich so zu 100% auf eigene Bedürfnisse anpassen. Ausserdem bietet OPNsense wöchentliche kostenlose Sicherheitsupdates. 
 
-6.2.1 Anforderungen
--	Server mit FC Anschluss
--	Glasfaser Kabel
--	Linux als OS
+### Anforderungen
+* Server mit FC Anschluss
+* Glasfaser Kabel
+* Linux als OS
 
 
 
-6.3. Firewall-Service des Providers
+### Firewall-Service des Providers
 Jeder Internet Provider hat bereits seine eigene Firewall. Damit kann man einen gewissen Teil der Viren bereits abfangen. Diese Art von Firewalls bieten den Vorteil, dass man sich um nichts kümmern muss bzw. Einstellungen nicht selbstständig vornehmen muss sondern alles bei Provider in Auftrag geben kann. Ein Nachteil ist aber, man kann Änderungen nicht selbst vornehmen und somit muss man immer warten bis der Provider die Änderung vorgenommen hat.
 
-6.4. Vergleich
+### Vergleich
 
  
+<img src="Bild5.png" alt="Alt-Text" title="" /> <br>
 
 
 
-
-7. VPN 
+## VPN 
 Ein VPN ist ein Virtuellen Privates Netzwerk welches auf einer öffentlich zugänglichen Infrastruktur basiert. Ausschliesslich wer zu diesem netzwerk gehört und autorisiert ist kann mit andern Leuten in diesem Netzwerk kommunizieren. So können zum Beispiel Mitarbeiter einer Firma von zu Hause aus in das Firmennetzwerk zugriefen und die infrastruktur der Firma nutzen ohne direkt im Netzwerk sein zu müssen.
-1.2.	VPN-Achitekturen
-1.2.1.  Site-to-Site VPN
+## VPN-Achitekturen
+### Site-to-Site VPN
 Bei einem Site-to-Site VON werden zwei lokale Netzwerke durch VPN-Gateways verbunden. Es ist die simpelste und am weitesten verbreitete Form von VPNs. Bei einem Site-to-Site VPN werden zwei lokale Netzwerke über ein öffentliches Netzwerk (z.B. Internet). Die Kommunikation zwischen den beiden Gateways erfolgt verschlüsselt über einen Tunnel, während in den lokalen Netzwerken die Kommunikation weiterhin unverschlüsselt.
 Der entscheidende Vorteil dieser Lösung liegt in der Tatsache, dass keine der lokalen Arbeitsstationen mit einer speziellen VPN-Software ausgestattet werden muss. Die Gateways übernehmen in diesem Fall die gesamte Gewährleistung der Sicherheit, weshalb das VPN für die im lokalen Netz befindlichen Rechner vollkommen transparent ist.
  
-1.2.2.  End-to-End VPN
+###  End-to-End VPN
 Die End-to-End Architektur stellt eine direkte Verbindung zwischen zwei Hosts dar. Die End-to-End Architektur ist die sicherste Lösung für eine VPN-Verbindung, da der Tunnel mit den verschlüsselten Daten die gesamte Verbindung bis zu den Hosts abdeckt (siehe Abb. 2). Damit wäre ein Angriff auf den Verbindungsweg nur schwer durchzuführen und damit fast ausgeschlossen. Der Nachteil dieser Lösung ergibt sich aus der Tatsache, dass jeder der beteiligten Hosts eine spezielle VPN-Software benötigt und weiterhin leistungsstark genug sein sollte damit Verzögerungen der Verbindung minimiert werden können.
  
-1.2.3.  Site-to-End VPN (Remote Access)
+<img src="Bild6.jpg" alt="Alt-Text" title="" /> <br>
+
+###  Site-to-End VPN (Remote Access)
 Diese Möglichkeit ist eine Kombination aus den beiden vorangegangen VPN-Lösungen. Remote-Access VPNs ermöglichen einen Remotezugriff auf die Ressourcen eines Unternehmens unter Wahrung der Datensicherheit, d.h. es wird eine verschlüsselte Verbindung vom Client zum Firmennetzwerk aufgebaut (siehe Abb 3). Der Client wählt sich zuerst bei seinem Provider ein und baut dann automatisch einen verschlüsselten Tunnel zum VPN-Gateway auf. Alle Clients müssen mit einer speziellen Client-VPN-Software ausgestattet werden. Eine klassische Anwendung stellt die Anbindung von Außendienstmitarbeitern dar (in diesem Falle wird der Client als Roadwarrior bezeichnet).
  
  
 
-7.1. Hardwarelösung
+### Hardwarelösung
 Da viele NGFWs auch VPN unterstützen und es kaum Hardware gibt welche nur für VPNs hergestellt wird nehmen wir hier wieder den PA-3020 von Paloalto. Dieser ermöglicht 1000 VPN Nutzer was in unserem Fall mehr als ausreicht. Da nicht speziell erwähnt wird, dass viele Mitarbeiter im Homeoffice oder sonst auswärts arbeiten gehen wir davon aus, dass dies kein Schwerpunkt ist, trotzdem ermöglicht der PA-3020 eine VPN für jeden einzelnen Mitarbeiter.
 
-7.2. VPN-Service des Providers
+### VPN-Service des Providers
 NordVPN ist ein VPN Service welcher anonymität im Internet gewährleistet. Verbindungen werden immer über einen VPN Server des Providers geleitet und sind zwischen dem Server und dem eigenen Computer immer verschlüsselt.
 
-7.3. PC-Lösung mit Windows oder Linux
+### PC-Lösung mit Windows oder Linux
 OpenVPN ist eine Software welche sowohl auf Linux als auch auf Windows geräten läuft. Man kann es ganz einfach installieren und anschliessend Zertifikate erstellen für jeden Client welcher sich verbinden können soll. Der Computer bzw der Server auf dem das interne Ende läuft, muss genügend Leistung haben.
  
 Hier sieht man wie man OpenVPN in eine Cloudlösung integriert. Es lässt sich gleichzeitig mit Amazon, Google und Microsoft kombinieren was eine Integration in alle Systeme garantiert.
+
+<img src="Bild7.png" alt="Alt-Text" title="" /> <br>
  
-7.4 Vergleich
+### Vergleich
   
-Quellenverzeichnis
+<img src="Bild8.png" alt="Alt-Text" title="" /> <br>
+
+# Quellenverzeichnis
 
 Thema	Quelle
 Sicherheit	https://www.evolit.ch/Portals/0/Content/04_Verifizierung/04-02_ISO27000/EVL_ISO27K-Info_V1-00.pdf
